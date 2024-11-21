@@ -36,3 +36,25 @@ ul {
     font-family: 'Arial', sans-serif;
     font-size: 18px;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        font-size: 18px;  /* Reduce font size for smaller screens */
+        margin: 20px auto;  /* Adjust margin */
+    }
+
+    h2 {
+        font-size: 28px;  /* Smaller heading text */
+        margin-top: 10px;
+    }
+
+    canvas {
+        margin: 20px auto;  /* Adjust canvas margin */
+        max-width: 90%;  /* Ensure it fits within the screen */
+    }
+
+    a, p, ul {
+        font-size: 16px;  /* Further reduce text size for readability */
+    }
+}
