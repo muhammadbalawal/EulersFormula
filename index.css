@@ -1,0 +1,38 @@
+body {
+    background-color: rgb(49, 49, 49);
+    color: white;
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;  /* Increase font size */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; /* Makes text more readable */
+    text-align: center;
+    margin: 50px auto;
+
+}
+
+/* Apply the font size and style to the h2 elements */
+h2 {
+    font-family: 'Roboto', sans-serif;  /* Stylish font for headings */
+    font-size: 32px;  /* Larger heading text */
+    text-align: center;  /* Center the headings */
+    margin-top: 20px;
+}
+
+/* Styling for canvas element */
+canvas {
+    border: 1px solid white;
+    display: block;
+    margin: 50px auto;
+}
+
+/* Add more contrast to links and emphasized text */
+a, p {
+    font-family: 'Arial', sans-serif;
+    font-size: 18px; /* Slightly larger text for links and paragraphs */
+}
+
+ul {
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+}

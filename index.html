@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+
+    <script src="./index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.1.1/math.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="./index.css">
+
+
+</head>
+<body>
+    <h2>Euler's Formula</h2>
+    <p>Euler's formula is expressed as: <br> \( e^{i\theta} = \cos(\theta) + i\sin(\theta) \). </p>
+
+    <p>As we increase the angle \( \theta \):</p>
+
+    <ul>
+        <li><strong>Cosine:</strong> Controls horizontal position on the circle. As \( \theta \) increases, \( \cos(\theta) \) moves from 1 to -1 along the X-axis.</li>
+        
+        <li><strong>Sine:</strong> Controls vertical position. As \( \theta \) increases, \( \sin(\theta) \) moves from 0 to 1 to -1 along the Y-axis.</li>
+    
+        <li><strong>\( e^{i\theta} \):</strong> A rotating point combining both \( \cos(\theta) \) and \( \sin(\theta) \), tracing a circle as \( \theta \) increases.</li>
+    </ul>
+    
+    <p>At \( e^{i\pi} \), when \( \theta \) reaches 180°, the point hits -1 on the real axis. This is Euler's Identity!</p>
+    
+    <p>So, as \( \theta \) increases, the complex number rotates around the circle, with \( \cos(\theta) \) moving left/right and \( \sin(\theta) \) moving up/down.</p>
+    
+    <canvas id="eulerGraphCanvas" width="500" height="500"></canvas>
+    
+    
+    <h2>Spirograph</h2>
+    <p>The Spirograph below demonstrates two rotating lines based on Euler's formula.</p>
+    <label for="line1">Line 1</label>
+    <input type="range" id="line1" name="line1" min="1" max="360" value="180" />
+    <label for="line2">Line 2</label>
+    <input type="range" id="line2" name="line2" min="1" max="360" value="100" />
+
+
+
+    <canvas id="rotatingLineCanvas" width="500" height="500"></canvas>
+</body>
+</html>
