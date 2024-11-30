@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./mandelbrot.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.1.1/math.js"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="header">
+        <h1>MathGraph</h1>
+        <div class="menu">
+            <a href="./index.html">Eulers Formula</a>
+            <a href="./new.html">Mandelbrot Set</a>
+        </div>
+    </div>
+    <h2>Mandelbrot Set Explorer</h2>
+
+    <p>The Mandelbrot set is a fractal that represents a set of complex numbers. Its beauty lies in the intricate patterns created by iterating a mathematical formula repeatedly.</p>
+
+    <p>To understand how it works:</p>
+
+    <ul>
+    <li><strong>Zoom:</strong> Determines how closely you view the Mandelbrot set.</li>
+    
+    <li><strong>Offset X:</strong> Shifts the view horizontally.</li>
+    
+    <li><strong>Offset Y:</strong> Shifts the view vertically.</li>
+    
+    <li><strong>Max Iterations:</strong> Controls the number of iterations used to determine if a point belongs to the Mandelbrot set. Higher values provide more detailed patterns but increase computation time.</li>
+    </ul>
+
+    <p>As you adjust these parameters in real-time:</p>
+    <ul>
+    <li><strong>Zooming in:</strong> Reveals more intricate structures within the fractal.</li>
+    <li><strong>Changing offsets:</strong> Lets you explore different areas of the Mandelbrot set.</li>
+    <li><strong>Increasing iterations:</strong> Produces smoother transitions and more defined boundaries for the fractal pattern.</li>
+    </ul>
+
+    <p>The real-time updates make it easy to explore the Mandelbrot set dynamically, revealing its mesmerizing complexity with every tweak!</p>
+    <div class="controls">
+        <div>
+            <label for="zoom">Zoom:</label>
+            <input type="number" id="zoom" value="300" step="50" min="50"> 
+        </div>
+    
+        <div>
+            <label for="offsetX">Offset X:</label>
+            <input type="number" id="offsetX" value="-2" step="0.1"> 
+        </div>
+    
+        <div>
+            <label for="offsetY">Offset Y:</label>
+            <input type="number" id="offsetY" value="-1.3" step="0.1">
+        </div>
+    
+        <div>
+            <label for="iterations">Iterations:</label>
+            <input type="number" id="iterations" value="100" step="10" min="10">
+        </div>
+    </div>
+    
+
+    <canvas id="mandelbrotCanvas" width="800" height="800"></canvas>
+
+</body>
+</html>

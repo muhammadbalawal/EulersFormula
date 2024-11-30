@@ -10,6 +10,33 @@ body {
     margin: 50px auto;
 
 }
+.header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+.menu {
+    display: flex;
+    gap: 15px;
+}
+.menu a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    background-color: #555;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.menu a:hover {
+    background-color: #777;
+}
 
 /* Apply the font size and style to the h2 elements */
 h2 {
@@ -37,11 +64,32 @@ ul {
     font-size: 18px;
 }
 
+.controls {
+    display: flex;
+    flex-direction: column; /* Keep the controls stacked vertically */
+    gap: 10px; /* Space between each control */
+    max-width: 300px; /* Optional: limits the width for better layout */
+    margin: 0 auto; /* Optional: centers the controls horizontally */
+}
+
+.controls div {
+    display: flex; /* Align label and input horizontally */
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px; /* Space between the label and input */
+}
+
+.controls label {
+    width: 120px; /* Optional: define a fixed width for labels */
+}
+
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
     body {
-        font-size: 18px;  /* Reduce font size for smaller screens */
-        margin: 20px auto;  /* Adjust margin */
+        font-size: 15px;  /* Reduce font size for smaller screens */
+        margin: 10px;  /* Adjust margin */
     }
 
     h2 {
@@ -54,7 +102,7 @@ ul {
         max-width: 90%;  /* Ensure it fits within the screen */
     }
 
-    a, p, ul {
-        font-size: 16px;  /* Further reduce text size for readability */
+    a, p, ul, label {
+        font-size: 10px;  /* Further reduce text size for readability */
     }
 }
